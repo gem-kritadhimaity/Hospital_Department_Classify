@@ -1,0 +1,26 @@
+Symptoms: Chest pain, shortness of breath, palpitations
+{"department": "Cardiology"}
+
+Symptoms: Severe headaches, dizziness, numbness in limbs
+{"department": "Neurology"} 
+
+Symptoms: Irregular menstrual cycles, pelvic pain, abnormal vaginal discharge
+{"department": "Gynecology"}
+
+Symptoms: Back pain, joint pain, difficulty moving
+{"department": "Orthopedics"}
+
+Symptoms: Abdominal pain, bloating, constipation
+{"department": "Gastroenterology"}
+
+Symptoms: Rash, itching, dry skin
+{"department": "Dermatology"}
+
+Symptoms: Frequent urination, excessive thirst, unexplained weight gain
+{"department": "Endocrinology"}
+
+Symptoms: Chronic cough, wheezing, shortness of breath
+{"department": "Pulmonology"}
+
+Symptoms: Depression, anxiety, insomnia
+{"department": "Psychiatry"}
