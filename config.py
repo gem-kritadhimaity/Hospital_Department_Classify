@@ -14,6 +14,7 @@ prompt_template = """
     Input Symptoms: {input}
     ------------------
     Based on the given input symptoms, classify the department related to the symptoms in which the patient should enquire. Given below is the list of departments:
+    - General Physician: Primary care for various general health concerns. Simple symptoms like headache, fever, pain, injury, cough, etc.
     - Cardiology: Heart and blood vessel conditions
     - Oncology: Cancer treatment
     - Neurology: Nervous system disorders
@@ -42,9 +43,9 @@ prompt_template = """
     - Infectious Diseases: Management of infections and contagious diseases
     - Rehabilitation: Physical and occupational therapy
     - Allergy and Immunology: Allergic and immune system disorders
-    - General Physician: Primary care for various general health concerns
     ------------------
 
+    Give priority to "General Physician" for one/ two symptoms.
     If unable to identify any department based on the symptoms, suggest "General Physician" as the department.
 
     Based on the above department list, choose only one department and return in JSON format:
