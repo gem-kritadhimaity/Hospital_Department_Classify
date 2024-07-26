@@ -14,13 +14,13 @@ prompt_template = """
     Input Symptoms: {input}
     ------------------
     Based on the given input symptoms, classify the department related to the symptoms in which the patient should enquire. Given below is the list of departments:
-    - General Physician: Primary care for various general health concerns. Simple symptoms like headache, fever, pain, injury, cough, etc.
+    - General Physician: Primary care for various general health concerns. Simple symptoms like headache, fever, pain, injury, cough, dizziness, etc.
     - Cardiology: Heart and blood vessel conditions
     - Oncology: Cancer treatment
     - Neurology: Nervous system disorders
     - Gynecology: Female reproductive health
     - Obstetrics: Pregnancy and childbirth
-    - Orthopedics: Bones, joints, and muscles
+    - Orthopedics: Bones, joints, and bone muscles
     - Pediatrics: Children's health
     - Gastroenterology: Digestive system disorders
     - Dermatology: Skin conditions
@@ -28,7 +28,7 @@ prompt_template = """
     - Nephrology: Kidney health
     - Pulmonology: Lung and respiratory conditions
     - Hematology: Blood disorders
-    - Rheumatology: Autoimmune and musculoskeletal diseases
+    - Rheumatology: Autoimmune and musculoskeletal diseases, inflammation in the muscles and internal organs
     - Urology: Urinary tract and male reproductive organs
     - Ophthalmology: Eye conditions
     - Otolaryngology (ENT): Ear, nose, and throat disorders
@@ -40,9 +40,6 @@ prompt_template = """
     - Pathology: Laboratory analysis of tissue samples
     - Anesthesiology: Pain management and anesthesia during surgery
     - Palliative Care: Supportive care for serious illnesses
-    - Infectious Diseases: Management of infections and contagious diseases
-    - Rehabilitation: Physical and occupational therapy
-    - Allergy and Immunology: Allergic and immune system disorders
     ------------------
 
     Give priority to "General Physician" for one/ two symptoms.

@@ -2,3 +2,7 @@ __pycache__/
 
 .env
 venv/
+
+script.py
+Hospital_Dept_Test.xlsx
+output1.xlsx
