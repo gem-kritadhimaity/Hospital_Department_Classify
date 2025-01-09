@@ -1,13 +1,30 @@
 import os
-from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+# from dotenv import load_dotenv
+# from langchain_groq import ChatGroq
+from langchain_community.chat_models import BedrockChat
+import boto3
 
-load_dotenv()
+# load_dotenv()
 
 # Get the GROQ API key from the environment variables
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(temperature=0, model_name="llama3-8b-8192")
+# llm = ChatGroq(temperature=0, model_name="llama3-8b-8192")
+
+# Initialize the Bedrock client
+bedrock_client = boto3.client(
+    service_name='bedrock-runtime',
+    region_name='us-west-2'  # replace with your preferred region
+)
+
+llm = BedrockChat(
+        model_id="anthropic.claude-3-5-sonnet-20240620-v1:0",
+        client=bedrock_client,
+        model_kwargs={
+            "temperature": 0,
+            "max_tokens": 4096
+        }
+    )
 
 
 prompt_template = """
